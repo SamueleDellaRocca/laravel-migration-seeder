@@ -1,4 +1,4 @@
-<h1>vediamo se ho collegato bene la pagina</h1>
+<h1>Questi sono i treni che partono oggi, ovvero il 2022-07-05</h1>
 @foreach ($treni as $treno)
 <div>
     <p>
