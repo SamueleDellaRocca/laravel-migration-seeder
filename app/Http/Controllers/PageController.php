@@ -9,8 +9,8 @@ class PageController extends Controller
 {
     public function index()
     {
-        $myTrains = Train::where('data_di_partenza', 'like', '2022-07-05')->get();
-        // $myTrains = Train::all();
+        // $myTrains = Train::where('data_di_partenza', 'like', '2022-07-05')->get();
+        $myTrains = Train::all();
 
 
         $data = [

@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <h1>Questi sono i treni che partono oggi, ovvero il 2022-07-05</h1>
+    <h1>Questi sono i treni</h1>
+    <ol>   
         @foreach ($treni as $treno)
-        <div>
-            <p>
-                {{ $treno->stazione_di_partenza }} ---> {{ $treno->stazione_di_arrivo }}, il giorno {{ $treno->data_di_partenza }}
-            </p>
-        </div>
+            <li>
+                {{ $treno->stazione_di_partenza }} ---> {{ $treno->stazione_di_arrivo }}, il giorno {{ $treno->data_di_partenza }}, orario di partenza {{ $treno->orario_di_partenza }}, orario di arrivo {{ $treno->orario_di_arrivo }}
+            </li>
         @endforeach
+    </ol>
 </body>
 </html>
 
