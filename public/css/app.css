@@ -3,3 +3,8 @@
   color: red;
 }
 
+.treni ul li {
+  display: inline-block;
+  padding: 0px 1rem;
+}
+

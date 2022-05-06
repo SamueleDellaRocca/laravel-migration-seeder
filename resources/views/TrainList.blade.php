@@ -19,7 +19,7 @@
         @endforeach
     </ol>
 
-    <span>{{ $treni->links() }}</span>
+    <div class="treni">{{ $treni->links() }}</div>
     @endsection
 
    
